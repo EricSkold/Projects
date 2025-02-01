@@ -1,0 +1,253 @@
+Answers file
+============
+
+Replace the placeholders "..." with your answers.
+
+
+0. Who are the group members?
+
+Hampus Löwing & Eric Sköld
+
+00. Did you run your tests using PyPy?  No
+(You can answer "no" if you don't know about PyPy)
+
+
+
+Part 1: Complexity analysis
+---------------------------
+
+1a. What is the asymptotic complexity of 'compute_intersections'? Justify your answer.
+    Answer in terms of N, the total number of 5-grams in the input files.
+
+You may make the following assumptions:
+- There are D documents.
+- Each document has the the same number of 5-grams K.
+- K is larger than D.
+- There is not much plagiarised text, that is, most 5-grams occur in only one file.
+  Specifically, the number of duplicate occurrences of 5-grams is a small *constant*.
+
+Complexity: O(n^2)
+
+Justification:
+D := number of documents, K := number of 5-grams per document, n := D*K
+
+Outer loops: has D^2 (nested loops), but since it is symmetrical it becomes D^2/2 => outerloop has O(D^2)
+Inner loops: has K^2 (nested loops) => O(K^2)
+
+Total complexity: O(D^2*K^2) = O(n^2)
+
+1b. How long did the program take compute the intersections for the 'tiny', 'small' and 'medium' directories?
+    (You can skip the 'medium' directory if it takes more than 5 minutes.)
+
+tiny (n=10_000):   5.45 s
+small (n=20_000):  23.26 s
+medium: ... s
+
+
+1c. Is the ratio between the times what you would expect, given the asymptotic complexity?
+    Explain very briefly why.
+
+Observed ratio: 23.26s/5.45s = 4.27
+Expected ratio: (20_000/10_000)^2=2^2=4
+
+The expected ratio matches the observed ratio.
+
+1d. How long do you predict the program would take to compute the intersections
+    for the 'big' and 'huge' directories, respectively? Show your calculations.
+    Do the same for the 'medium' directory too if you didn't run it in 1b.
+    Write your answer in something human-readable (e.g., minutes/hours/days/months/years).
+
+medium: 9.08 minutes
+big:    15.15 hours
+huge:   10.1 days
+
+Calculations:
+
+formula: T_observed_tiny * (N_target / N_observed_tiny)^2
+
+medium (n=100_000): 5.45 * (100_000/10_000)^2=545s=9.08 minutes
+big (n=1_000_000): 5.54 * (1_000_000/10_000)^2=54_500s=15.15 hours
+huge (n=4_000_000): 5.45 * (4_000_000/10_000)^2=872_000s=10.1 days
+
+
+Part 2: Using an intermediate data structure
+--------------------------------------------
+
+2a. How long time does it take to
+    (1) build the n-gram index,
+    (2) compute the intersections,
+    for the 'small' directory?
+
+build_ngram_index: 33.1 s
+compute_intersections: 13.15 s
+
+
+2b. Was this an improvement compared to the original implementation (see 1b)?
+
+This was an improvement in calculating intersections (23.26 compared to 13.15s)
+However, building the index took 33.1s so in total it was slower.
+
+
+Part 3: Implementing a BST
+--------------------------
+
+3a. How long time does it take to
+    (1) build the n-gram index,
+    (2) compute the intersections,
+    for the 'tiny', 'small' and 'medium' directories?
+    If you get a stack overflow or recursion error, just say so.
+
+    Note: You might see a *slowdown* compared to above...
+    Don't be alarmed, you will solve all this in part 4.
+
+tiny:
+  - build_ngram_index: 2.95 s
+  - compute_intersections: 0.35 s
+
+small:
+  - build_ngram_index: 18.49 s
+  - compute_intersections: 1.88 s
+
+medium:
+  - build_ngram_index: 57.09 s
+  - compute_intersections: 6.05 s
+
+
+3b. Which of the BSTs appearing in the program usually become unbalanced?
+    (The BSTs are 'file_ngrams', 'ngram_index', 'intersections'.)
+
+A perfectly balanced tree has `height = log_2(size)`
+
+The most unbalanced is file_ngrams since it's height = size, for the others, size > height.
+
+
+3c (optional).
+Is there a simple way to stop these trees becoming unbalanced?
+(I.e., without using a self-balancing data structure.)
+
+We believe they are unbalanced because they are inserted in sorted order, i.e. file1, file2...
+One possible fix would be to randomize the insertion order.
+
+Part 4: Implementing an AVL tree
+--------------------------------
+
+4a. How long time does it take to
+    (1) build the n-gram index,
+    (2) compute the intersections,
+    for the 'small', 'medium' and 'big' directories?
+
+small:
+  - build_ngram_index: 1.89 s
+  - compute_intersections: 0.27 s
+
+medium:
+  - build_ngram_index: 12.19 s
+  - compute_intersections: 1.36 s
+
+big:
+  - build_ngram_index: 140.72 s
+  - compute_intersections: 17.86 s
+
+
+For the below questions, we denote by N the total number of 5-grams.
+We assume there is a (small) constant number of duplicate occurrences of 5-grams.
+
+4b. What is the asymptotic complexity of 'build_ngram_index'?
+    Justify briefly.
+
+Complexity: O(N)
+
+Justification:
+The outer loop iterates over F files, and the inner loop processes N 5-grams in total for all files. 
+Since every 5-gram is (assumed) to be processed once (small amount of duplicates), the total time 
+complexity of the code is O(N)
+
+And by calculations we see that the observed runtimes follow a linear relatinshop between small => medium => big
+
+4c. What is the asymptotic complexity of 'compute_intersections'?
+    Justify briefly.
+
+Complexity: O(N*log N)
+
+Justification:
+The outer loop iterates O(N) times over unique 5-grams. Retrieving paths from the AVL tree takes O(log N). 
+This together results in O(N*log N)
+
+And again, doing calculations shows that the runtime (almost) scales O(N*log N)
+
+4d. The 'huge' directory contains 4 times as many n-grams as the 'big'.
+    Approximately how long time will it take to run the program on 'huge',
+    given that you know how long time it took to run on 'big' (or 'medium')?
+    Justify briefly.
+
+    If you have the patience you can also run it to see how close your calculations were.
+
+Theoretical time to run 'huge': 641.8s
+
+Justification:
+**Build index**:
+Scaling factor := N_huge / N_big = 4
+
+This gives estimated time to run huge is 140.72 * 4 = 562.88s
+
+**Computing intersections**: 
+T_big = 17.86s, N_big = 1_000_000, N_huge = 4_000_000
+Scaling factor := (N_huge * log N_huge)/(N_big * log N_big) = 4.4
+
+This gives the estimated time to run huge is 17.86 * 4.2 = 78.6s
+
+TOTAL = 562.88+78.6=641.8s
+
+(Optional) Actual time to run 'huge': ...
+
+
+4e. Briefly compare your answer in 4d, with your answer in 1d.
+
+The switch from a multimap to an AVL map significantly improves performance making the program much more efficient for large datasets.
+Computing intersections went from O(N^2) to O(N*log N)
+
+
+4f (optional).
+Instead of the previous assumption, we now allow an arbitrary total similarity score S.
+What is the asymptotic complexity of the two functions in terms of both N and S (at the same time)?
+
+Complexity of 'build_ngram_index': ...
+
+Justification:
+...
+
+Complexity of 'compute_intersections': ...
+
+Justification:
+...
+
+
+Appendix: general information
+-----------------------------
+
+A1. How many hours did you spend on the assignment?
+
+...
+
+
+A2. Do you know of any bugs or limitations?
+
+...
+
+
+A3. Did you collaborate with any other students on this lab?
+    If so, write with whom and in what way you collaborated.
+    Also list any resources (including the web) you have used in creating your design.
+
+...
+
+
+A4. Did you encounter any serious problems?
+
+...
+
+
+A5. Do you have other comments or feedback?
+
+...
+

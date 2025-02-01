@@ -1,0 +1,17 @@
+# This is a gitignore file.
+# It tells git which files and directories it should avoid tracking.
+# For an explanation of the format, see here: https://git-scm.com/docs/gitignore
+#
+# We use a whitelisting approach.
+# If you want to track more files, you need to add them here.
+
+# Ignore everything except directories:
+*
+!*/
+
+# Track the following top-level files:
+!/.gitignore
+!/answers.txt
+
+# Track Python files:
+!/**/*.py

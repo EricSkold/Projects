@@ -1,0 +1,285 @@
+graph mygraph {
+	"Tingvallsvägen" [label="Tingvallsvägen" fillcolor="#90EE90" style=filled]
+	"Östra Sjukhuset" [label="Östra Sjukhuset" fillcolor="#90EE90" style=filled]
+	Kaggeledstorget [label=Kaggeledstorget fillcolor="#90EE90" style=filled]
+	"Ättehögsgatan" [label="Ättehögsgatan" fillcolor="#90EE90" style=filled]
+	"Munkebäckstorget" [label="Munkebäckstorget" fillcolor="#90EE90" style=filled]
+	"Härlanda" [label="Härlanda" fillcolor="#90EE90" style=filled]
+	Solrosgatan [label=Solrosgatan]
+	Stockholmsgatan [label=Stockholmsgatan fillcolor="#90EE90" style=filled]
+	Redbergsplatsen [label=Redbergsplatsen fillcolor="#90EE90" style=filled]
+	Olskrokstorget [label=Olskrokstorget]
+	Svingeln [label=Svingeln]
+	"Ullevi Norra" [label="Ullevi Norra"]
+	Centralstationen [label=Centralstationen fillcolor="#90EE90" style=filled]
+	"Ullevi Södra" [label="Ullevi Södra"]
+	Brunnsparken [label=Brunnsparken fillcolor="#90EE90" style=filled]
+	"Gamlestads Torg" [label="Gamlestads Torg" fillcolor="#90EE90" style=filled]
+	"Lilla Bommen" [label="Lilla Bommen"]
+	Stenpiren [label=Stenpiren fillcolor="#90EE90" style=filled]
+	Domkyrkan [label=Domkyrkan]
+	Nordstan [label=Nordstan]
+	"Järntorget" [label="Järntorget" fillcolor="#90EE90" style=filled]
+	Prinsgatan [label=Prinsgatan fillcolor="#90EE90" style=filled]
+	Hagakyrkan [label=Hagakyrkan]
+	Olivedalsgatan [label=Olivedalsgatan fillcolor="#90EE90" style=filled]
+	"Linnéplatsen" [label="Linnéplatsen" fillcolor="#90EE90" style=filled]
+	"Botaniska Trädgården" [label="Botaniska Trädgården" fillcolor="#90EE90" style=filled]
+	Marklandsgatan [label=Marklandsgatan fillcolor="#90EE90" style=filled]
+	"Axel Dahlströms Torg" [label="Axel Dahlströms Torg"]
+	Bokekullsgatan [label=Bokekullsgatan]
+	Lantmilsgatan [label=Lantmilsgatan]
+	Nymilsgatan [label=Nymilsgatan]
+	"Musikvägen" [label="Musikvägen"]
+	Positivgatan [label=Positivgatan]
+	"Frölunda Torg Spårvagn" [label="Frölunda Torg Spårvagn"]
+	Briljantgatan [label=Briljantgatan]
+	Smaragdgatan [label=Smaragdgatan]
+	Opaltorget [label=Opaltorget]
+	"Mölndals Innerstad" [label="Mölndals Innerstad"]
+	"Mölndals sjukhus" [label="Mölndals sjukhus"]
+	"Lackarebäck" [label="Lackarebäck"]
+	"Krokslätts Fabriker" [label="Krokslätts Fabriker"]
+	"Krokslätts torg" [label="Krokslätts torg"]
+	Lana [label=Lana]
+	Varbergsgatan [label=Varbergsgatan]
+	Elisedal [label=Elisedal]
+	Almedal [label=Almedal]
+	"Liseberg Södra" [label="Liseberg Södra"]
+	"Korsvägen" [label="Korsvägen"]
+	Scandinavium [label=Scandinavium]
+	Berzeliigatan [label=Berzeliigatan]
+	Chalmers [label=Chalmers]
+	"Grönsakstorget" [label="Grönsakstorget"]
+	Vasaplatsen [label=Vasaplatsen]
+	"Vasa Viktoriagatan" [label="Vasa Viktoriagatan"]
+	Valand [label=Valand]
+	Kapellplatsen [label=Kapellplatsen]
+	"Handelshögskolan" [label="Handelshögskolan"]
+	Brunnsgatan [label=Brunnsgatan]
+	Seminariegatan [label=Seminariegatan]
+	"Högsbogatan" [label="Högsbogatan"]
+	"Klintens Väg" [label="Klintens Väg"]
+	Godhemsgatan [label=Godhemsgatan]
+	Mariaplan [label=Mariaplan fillcolor="#90EE90" style=filled]
+	Ekedal [label=Ekedal]
+	Ostindiegatan [label=Ostindiegatan]
+	"Vagnhallen Majorna" [label="Vagnhallen Majorna"]
+	Sannaplan [label=Sannaplan fillcolor="#90EE90" style=filled]
+	Jaegerdorffsplatsen [label=Jaegerdorffsplatsen]
+	"Chapmans Torg" [label="Chapmans Torg"]
+	Kaptensgatan [label=Kaptensgatan]
+	Stigbergstorget [label=Stigbergstorget]
+	Masthuggstorget [label=Masthuggstorget]
+	Kungsportsplatsen [label=Kungsportsplatsen]
+	Sanatoriegatan [label=Sanatoriegatan]
+	Virginsgatan [label=Virginsgatan]
+	"Hjällbo" [label="Hjällbo"]
+	Ejdergatan [label=Ejdergatan fillcolor="#90EE90" style=filled]
+	Hammarkullen [label=Hammarkullen]
+	"Storås" [label="Storås"]
+	"Angered Centrum" [label="Angered Centrum"]
+	Welandergatan [label=Welandergatan]
+	"Töpelsgatan" [label="Töpelsgatan"]
+	"Bögatan" [label="Bögatan"]
+	Ekmanska [label=Ekmanska]
+	"Bäckeliden" [label="Bäckeliden"]
+	"Sankt Sigfrids Plan" [label="Sankt Sigfrids Plan"]
+	"Liseberg Station" [label="Liseberg Station"]
+	Frihamnen [label=Frihamnen]
+	"Hjalmar Brantingsplatsen" [label="Hjalmar Brantingsplatsen"]
+	"Vågmästareplatsen" [label="Vågmästareplatsen"]
+	Wieselgrensplatsen [label=Wieselgrensplatsen]
+	Rambergsvallen [label=Rambergsvallen]
+	"Gropegårdsgatan" [label="Gropegårdsgatan"]
+	"Eketrägatan" [label="Eketrägatan"]
+	"Sälöfjordsgatan" [label="Sälöfjordsgatan"]
+	"Vårväderstorget" [label="Vårväderstorget"]
+	"Mildvädersgatan" [label="Mildvädersgatan"]
+	"Önskevädersgatan" [label="Önskevädersgatan"]
+	"Friskväderstorget" [label="Friskväderstorget"]
+	"Väderilsgatan" [label="Väderilsgatan"]
+	Temperaturgatan [label=Temperaturgatan]
+	Varmfrontsgatan [label=Varmfrontsgatan]
+	Allhelgonakyrkan [label=Allhelgonakyrkan]
+	Aprilgatan [label=Aprilgatan]
+	"Kortedala Torg" [label="Kortedala Torg"]
+	Runstavsgatan [label=Runstavsgatan]
+	"Nymånegatan" [label="Nymånegatan"]
+	"Beväringsgatan" [label="Beväringsgatan"]
+	Kviberg [label=Kviberg]
+	Bellevue [label=Bellevue]
+	SKF [label=SKF]
+	"Wavrinskys Plats" [label="Wavrinskys Plats"]
+	Medicinaregatan [label=Medicinaregatan]
+	"Sahlgrenska Huvudentré" [label="Sahlgrenska Huvudentré"]
+	Komettorget [label=Komettorget]
+	"Rymdtorget Spårvagn" [label="Rymdtorget Spårvagn"]
+	Teleskopgatan [label=Teleskopgatan]
+	"Galileis Gata" [label="Galileis Gata"]
+	Januarigatan [label=Januarigatan]
+	Sandarna [label=Sandarna fillcolor="#90EE90" style=filled]
+	Kungssten [label=Kungssten fillcolor="#90EE90" style=filled]
+	"Doktor Fries Torg" [label="Doktor Fries Torg"]
+	"Doktor Sydows Gata" [label="Doktor Sydows Gata"]
+	"Roddföreningen" [label="Roddföreningen" fillcolor="#90EE90" style=filled]
+	Saltholmen [label=Saltholmen fillcolor="#90EE90" style=filled]
+	"Långedrag" [label="Långedrag" fillcolor="#90EE90" style=filled]
+	Hinsholmen [label=Hinsholmen fillcolor="#90EE90" style=filled]
+	"Käringberget" [label="Käringberget" fillcolor="#90EE90" style=filled]
+	Tranered [label=Tranered fillcolor="#90EE90" style=filled]
+	Hagen [label=Hagen fillcolor="#90EE90" style=filled]
+	"Nya Varvsallén" [label="Nya Varvsallén" fillcolor="#90EE90" style=filled]
+	Majvallen [label=Majvallen]
+	"Fjällgatan" [label="Fjällgatan"]
+	Allhelgonakyrkan -- Aprilgatan
+	Allhelgonakyrkan -- Januarigatan
+	Allhelgonakyrkan -- "Kortedala Torg"
+	Almedal -- Elisedal
+	Almedal -- "Liseberg Södra"
+	"Angered Centrum" -- "Storås"
+	"Axel Dahlströms Torg" -- Lantmilsgatan
+	"Axel Dahlströms Torg" -- Marklandsgatan
+	Bellevue -- Kviberg
+	Bellevue -- SKF
+	Berzeliigatan -- "Korsvägen"
+	Berzeliigatan -- Valand
+	"Beväringsgatan" -- Kviberg
+	"Beväringsgatan" -- "Nymånegatan"
+	Bokekullsgatan -- "Högsbogatan"
+	Bokekullsgatan -- Marklandsgatan
+	"Botaniska Trädgården" -- "Linnéplatsen"
+	"Botaniska Trädgården" -- Marklandsgatan
+	"Botaniska Trädgården" -- "Sahlgrenska Huvudentré"
+	Briljantgatan -- "Frölunda Torg Spårvagn"
+	Briljantgatan -- Smaragdgatan
+	Brunnsgatan -- "Handelshögskolan"
+	Brunnsgatan -- Seminariegatan
+	Brunnsparken -- Centralstationen
+	Brunnsparken -- Domkyrkan
+	Brunnsparken -- Kungsportsplatsen
+	Brunnsparken -- "Lilla Bommen"
+	Brunnsparken -- Nordstan
+	Brunnsparken -- Stenpiren
+	"Bäckeliden" -- Ekmanska
+	"Bäckeliden" -- "Sankt Sigfrids Plan"
+	"Bögatan" -- Ekmanska
+	"Bögatan" -- "Töpelsgatan"
+	Centralstationen -- "Gamlestads Torg"
+	Centralstationen -- "Lilla Bommen"
+	Centralstationen -- "Ullevi Norra"
+	Centralstationen -- "Ullevi Södra"
+	Chalmers -- Kapellplatsen
+	Chalmers -- "Korsvägen"
+	Chalmers -- "Wavrinskys Plats"
+	"Chapmans Torg" -- Jaegerdorffsplatsen
+	"Chapmans Torg" -- Kaptensgatan
+	"Doktor Fries Torg" -- "Doktor Sydows Gata"
+	"Doktor Fries Torg" -- "Wavrinskys Plats"
+	Domkyrkan -- "Grönsakstorget"
+	Ejdergatan -- "Gamlestads Torg"
+	Ejdergatan -- Redbergsplatsen
+	Ekedal -- Godhemsgatan
+	Ekedal -- Majvallen
+	"Eketrägatan" -- "Gropegårdsgatan"
+	"Eketrägatan" -- "Sälöfjordsgatan"
+	Elisedal -- Varbergsgatan
+	"Fjällgatan" -- Majvallen
+	"Fjällgatan" -- Stigbergstorget
+	Frihamnen -- "Hjalmar Brantingsplatsen"
+	Frihamnen -- "Lilla Bommen"
+	Frihamnen -- Nordstan
+	"Friskväderstorget" -- "Väderilsgatan"
+	"Friskväderstorget" -- "Önskevädersgatan"
+	"Frölunda Torg Spårvagn" -- Positivgatan
+	"Galileis Gata" -- Januarigatan
+	"Galileis Gata" -- Teleskopgatan
+	"Gamlestads Torg" -- "Hjällbo"
+	"Gamlestads Torg" -- SKF
+	Godhemsgatan -- "Klintens Väg"
+	Godhemsgatan -- Mariaplan
+	"Gropegårdsgatan" -- Rambergsvallen
+	"Grönsakstorget" -- Hagakyrkan
+	"Grönsakstorget" -- Vasaplatsen
+	Hagakyrkan -- "Järntorget"
+	Hagakyrkan -- "Vasa Viktoriagatan"
+	Hagen -- "Nya Varvsallén"
+	Hagen -- Tranered
+	Hammarkullen -- "Hjällbo"
+	Hammarkullen -- "Storås"
+	"Handelshögskolan" -- "Vasa Viktoriagatan"
+	Hinsholmen -- "Käringberget"
+	Hinsholmen -- "Långedrag"
+	"Hjalmar Brantingsplatsen" -- "Vågmästareplatsen"
+	"Härlanda" -- "Munkebäckstorget"
+	"Härlanda" -- Solrosgatan
+	"Härlanda" -- Stockholmsgatan
+	"Högsbogatan" -- "Klintens Väg"
+	Jaegerdorffsplatsen -- "Vagnhallen Majorna"
+	"Järntorget" -- Masthuggstorget
+	"Järntorget" -- Prinsgatan
+	"Järntorget" -- Stenpiren
+	Kaggeledstorget -- "Tingvallsvägen"
+	Kaggeledstorget -- "Ättehögsgatan"
+	Kapellplatsen -- Vasaplatsen
+	Kaptensgatan -- Stigbergstorget
+	Komettorget -- "Rymdtorget Spårvagn"
+	"Korsvägen" -- "Liseberg Station"
+	"Korsvägen" -- "Liseberg Södra"
+	"Korsvägen" -- Scandinavium
+	"Kortedala Torg" -- Runstavsgatan
+	"Krokslätts Fabriker" -- "Krokslätts torg"
+	"Krokslätts Fabriker" -- "Lackarebäck"
+	"Krokslätts torg" -- Lana
+	Kungsportsplatsen -- Valand
+	Kungssten -- "Nya Varvsallén"
+	Kungssten -- Sandarna
+	"Käringberget" -- Tranered
+	"Lackarebäck" -- "Mölndals sjukhus"
+	Lana -- Varbergsgatan
+	Lantmilsgatan -- Nymilsgatan
+	"Linnéplatsen" -- Olivedalsgatan
+	"Linnéplatsen" -- "Sahlgrenska Huvudentré"
+	"Liseberg Station" -- "Sankt Sigfrids Plan"
+	"Långedrag" -- "Roddföreningen"
+	Mariaplan -- Marklandsgatan
+	Mariaplan -- Ostindiegatan
+	Mariaplan -- Sannaplan
+	Masthuggstorget -- Stigbergstorget
+	Medicinaregatan -- "Sahlgrenska Huvudentré"
+	Medicinaregatan -- "Wavrinskys Plats"
+	"Mildvädersgatan" -- "Vårväderstorget"
+	"Mildvädersgatan" -- "Önskevädersgatan"
+	"Munkebäckstorget" -- Solrosgatan
+	"Munkebäckstorget" -- "Ättehögsgatan"
+	"Musikvägen" -- Nymilsgatan
+	"Musikvägen" -- Positivgatan
+	"Mölndals Innerstad" -- "Mölndals sjukhus"
+	"Nymånegatan" -- Runstavsgatan
+	Olivedalsgatan -- Prinsgatan
+	Olivedalsgatan -- Seminariegatan
+	Olskrokstorget -- Redbergsplatsen
+	Olskrokstorget -- Svingeln
+	Opaltorget -- Smaragdgatan
+	Ostindiegatan -- Sannaplan
+	Ostindiegatan -- "Vagnhallen Majorna"
+	Rambergsvallen -- Wieselgrensplatsen
+	Redbergsplatsen -- Stockholmsgatan
+	"Roddföreningen" -- Saltholmen
+	"Rymdtorget Spårvagn" -- Teleskopgatan
+	Sanatoriegatan -- Solrosgatan
+	Sanatoriegatan -- Virginsgatan
+	Sandarna -- Sannaplan
+	Scandinavium -- "Ullevi Södra"
+	Svingeln -- "Ullevi Norra"
+	"Sälöfjordsgatan" -- "Vårväderstorget"
+	Temperaturgatan -- Varmfrontsgatan
+	Temperaturgatan -- "Väderilsgatan"
+	"Tingvallsvägen" -- "Östra Sjukhuset"
+	"Töpelsgatan" -- Welandergatan
+	"Ullevi Norra" -- "Ullevi Södra"
+	Valand -- Vasaplatsen
+	"Vasa Viktoriagatan" -- Vasaplatsen
+	Virginsgatan -- Welandergatan
+	"Vågmästareplatsen" -- Wieselgrensplatsen
+}

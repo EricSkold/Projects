@@ -1,0 +1,172 @@
+Answers file
+============
+
+Replace the placeholders "..." with your answers.
+
+0. Who are the group members?
+
+Hampus Löwing & Erik Sköld
+
+
+Part 1: Dijkstra's algorithm (UCS)
+----------------------------------
+
+Run uniform-cost search (Dijkstra's algorithm) on the following shortest path problems.
+State the number of loop iterations and the shortest path found (as printed by the program).
+
+Note: *shortest* means *minimal cost*, not smallest number of edges.
+
+1a. Travel from Lund to Kiruna in the adjacency graph `AdjacencyGraph/citygraph-SE.txt`
+
+Loop iterations: 5427
+Cost of path:    1826
+Number of edges: 31
+Shortest path:   Lund --[16]-> Löddeköpinge --[69]-> Hjärnarp --[52]-> Åled --[6]-> Oskarström --[22]-> ..... --[68]-> Storuman --[71]-> Sorsele --[233]-> Jokkmokk --[93]-> Gällivare --[121]-> Kiruna
+
+
+1b. Solve the 3x3-puzzle with starting state `/HFG/BED/C_A/` and goal state `/ABC/DEF/GH_/`.
+
+Loop iterations: 483753
+Cost of path:    31
+Number of edges: 31
+Shortest path:   /HFG/BED/C_A/ -> /HFG/BED/_CA/ -> /HFG/_ED/BCA/ -> /HFG/E_D/BCA/ -> /HFG/ECD/B_A/ -> ..... -> /ABC/DHE/_GF/ -> /ABC/DHE/G_F/ -> /ABC/D_E/GHF/ -> /ABC/DE_/GHF/ -> /ABC/DEF/GH_/
+
+
+1c. Go from from point 23:161 to point 130:211 in the grid graph `GridGraph/AR0011SR.txt`.
+
+Loop iterations: 159335
+Cost of path:    366.4
+Number of edges: 308
+Shortest path:   23:161 --[1]-> 23:160 --[1]-> 23:159 --[1]-> 23:158 --[1]-> 23:157 --[1]-> ..... --[1.41]-> 132:207 --[1.41]-> 131:208 --[1.41]-> 130:209 --[1]-> 130:210 --[1]-> 130:211
+
+
+Part 2: Word ladder
+-------------------
+
+Use uniform-cost search (Dijkstra's algorithm) to solve the following word ladder problem.
+State the number of loop iterations and the shortest path found (as printed by the program).
+
+2a. Find the shortest word ladder from "syster" to "broder" using the dictionary `WordLadder/swedish-saldo.txt`.
+
+Loop iterations: 70342
+Cost of path:    11
+Number of edges: 11
+Solution path:   syster -> byster -> bysten -> basten -> basken -> ..... -> bauden -> bruden -> bröden -> bröder -> broder
+
+
+Part 3: The A* algorithm
+------------------------
+
+Use A* to solve the following sliding puzzles from Part 1.
+You only have to state the number of loop iterations and calculated distance.
+
+3a. Solve the 3x3-puzzle with starting state `/HFG/BED/C_A/`, and goal state `/ABC/DEF/GH_/`.
+
+Loop iterations: 10650
+Cost of path:    31
+
+
+3b. What is the output if you try to solve the starting state `/HGF/BED/C_A/` instead?
+    (Still the same goal state `/ABC/DEF/GH_/`)
+
+Loop iterations: 483841
+Cost of path:    No path found
+
+
+Part 4: Guessing the cost
+-------------------------
+
+Use A* to find shortest paths for the remaining problems from Parts 1 and 2.
+You only have to state the number of loop iterations and calculated distance.
+
+4a. Go from from point 23:161 to point 130:211 in the grid graph `GridGraph/AR0011SR.txt`.
+
+Loop iterations: 95162
+Cost of path:    366.4
+
+
+4b. Find the shortest word ladder from "syster" to "broder" using the dictionary `WordLadder/swedish-saldo.txt`.
+
+Loop iterations: 5867
+Cost of path:    11
+
+
+Part 5: Reflections
+-------------------
+
+5a. What is the approximate improvement factor in the number of loop iterations of A* over Dijkstra?
+    Consider separately grid graphs, word ladders, and sliding puzzles.
+    Try a number of different examples per class.
+
+GridGraph:
+Part 1c vs. Part 4a:
+Dijkstra: 159,335 iterations
+A*: 95,162 iterations
+Improvement factor: ~1.7 (about a 70% improvement)
+
+WordLadder:
+Part 2a vs. Part 4b:
+Dijkstra: 70,342 iterations
+A*: 5,867 iterations
+Improvement factor: ~12 (significant improvement)
+
+SlidingPuzzle: 
+Part 1b vs. Part 3a:
+Dijkstra: 483,753 iterations
+A*: 10,650 iterations
+Improvement factor: ~45 (large improvement)
+
+
+5b. For which of the three above graph types did the heuristic guessCost have the most impact?
+    What do you think is the reason for this?
+
+It had the most impact on the sliding puzzles. The improvement was a factor of 45, much higher 
+than for the other graph types. The likely reason is that Manhattan distance strongly guides 
+the search directly toward the goal configuration, pruning the search space. I.e. that guessCost
+reduced the search space much more than for the other graphs.
+
+
+5c. What are the main differences between your implementations of `AStar` and `Dijkstra`?
+
+The difference is that A* uses the estimated cost rather than the current known cost that Dijkstra uses
+when prioritizing in the queue.
+
+
+5d. What is the asymptotic average-case complexity of `WordLadder.{outgoing_edges}` simultaneously in:
+      - the alphabet size K and
+      - the length N
+    of the given word? Justify your answer.
+    (Note: all involved sets are hash sets, which have constant time search time.)
+
+It is O(N^2*K). First it iterates over all the characters (N), then iterates over all characters in the alphabet (K),
+then for each character in the alphabet we create a new string with length N. Thus it becomes O(N^2*K) 
+
+Appendix: general information
+-----------------------------
+
+A1. How many hours did you spend on the assignment?
+
+...
+
+
+A2. Do you know of any bugs or limitations?
+
+...
+
+
+A3. Did you collaborate with any other students on this lab?
+    If so, write with whom and in what way you collaborated.
+    Also list any resources (including the web) you have used in creating your design.
+
+...
+
+
+A4. Did you encounter any serious problems?
+
+...
+
+
+A5. Do you have other comments or feedback?
+
+...
+
